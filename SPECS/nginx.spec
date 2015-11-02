@@ -1,4 +1,5 @@
 #
+%define _topdir %(echo $(pwd))
 %define nginx_home %{_localstatedir}/cache/nginx
 %define nginx_user nginx
 %define nginx_group nginx
