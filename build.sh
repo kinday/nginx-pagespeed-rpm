@@ -1,5 +1,5 @@
 #!/bin/sh
-yum install wget rpm-build openssl-devel -y
+yum install wget rpm-build openssl-devel gcc-c++ pcre-devel zlib-devel make unzip -y
 NX_VERSION=`grep "Version" SPECS/nginx.spec |cut -d " " -f 2`
 wget http://nginx.org/download/nginx-${NX_VERSION}.tar.gz -P SOURCES/
 NPS_VERSION=`grep "define nps_version" SPECS/nginx.spec |cut -d " " -f 3`
